@@ -1,0 +1,72 @@
+
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url(IMG_2576.jpg);
+  background-position: center;
+  background-size: cover;
+}
+nav {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+  position: fixed;
+
+}
+.logo {
+  width: 150px;
+  margin: 0 auto 20px auto;
+  cursor: 3rem;
+  font-weight: 450;
+}
+nav ul {
+  background: #000;
+  width: 100%;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 20px 30px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+.text {
+  padding: 20px 10%;
+}
+
+nav.sticky {
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #000;
+  color: white;
+  display: flexs;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 3%;
+  transition-property: 0.6s;
+}
+nav.sticky.logo {
+  margin-top: 10px;
+}
+nav.sticky ul {
+  background-color: transparent;
+  font-size: 1.3rem;
+}
+h1 {
+  font-size: 100px;
+  text-align: center;
+}
+h2 {
+  font-size: 20px;
+  text-align: center;
+}
+
+p,
+li {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
