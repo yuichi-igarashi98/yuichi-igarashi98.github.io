@@ -62,8 +62,6 @@ h1 {
 h2 {
   font-size: 20px;
   text-align: left;
-  color: yellowgreen;
-  text-decoration: underline;
 }
 
 p,
@@ -71,4 +69,8 @@ li {
   font-size: 16px;
   line-height: 2;
   letter-spacing: 1px;
+}
+.under {
+  text-decoration: underline;
+  color: greenyellow;
 }
