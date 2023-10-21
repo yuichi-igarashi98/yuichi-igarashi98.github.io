@@ -61,7 +61,9 @@ h1 {
 }
 h2 {
   font-size: 20px;
-  text-align: center;
+  text-align: left;
+  color: yellowgreen;
+  text-decoration: underline;
 }
 
 p,
