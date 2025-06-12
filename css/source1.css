@@ -214,3 +214,147 @@ html {
   background-color: #45a049;
   color: white;
 }
+
+/* Details/Summary styling for Marathon section */
+details {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  margin: 15px 0;
+  padding: 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+details:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+details[open] {
+  background-color: #ffffff;
+  border-color: #4CAF50;
+}
+
+summary {
+  background-color: #4CAF50;
+  color: white;
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.1em;
+  border-radius: 7px;
+  margin: 0;
+  transition: background-color 0.3s ease;
+  position: relative;
+}
+
+summary:hover {
+  background-color: #45a049;
+}
+
+summary::marker {
+  content: '';
+}
+
+summary::before {
+  content: '▶️';
+  margin-right: 10px;
+  transition: transform 0.3s ease;
+}
+
+details[open] summary::before {
+  transform: rotate(90deg);
+  content: '🔽';
+}
+
+details ul {
+  margin: 0;
+  padding: 20px;
+  background-color: inherit;
+}
+
+details li {
+  margin: 12px 0;
+  padding: 8px 12px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  border-left: 4px solid #4CAF50;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+details li:hover {
+  transform: translateX(5px);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+/* Marathon achievements styling */
+.marathon-achievement {
+  background: linear-gradient(135deg, #FFD700, #FFA500);
+  color: #333;
+  font-weight: bold;
+  border-left-color: #FFD700 !important;
+}
+
+.marathon-pb {
+  background: linear-gradient(135deg, #4CAF50, #45a049);
+  color: white;
+  border-left-color: #2E7D32 !important;
+}
+
+/* Marathon statistics */
+.marathon-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  border-radius: 10px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.stat-number {
+  font-size: 2em;
+  font-weight: bold;
+  color: #4CAF50;
+  display: block;
+}
+
+.stat-label {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  details {
+    margin: 10px 0;
+  }
+  
+  summary {
+    padding: 12px 15px;
+    font-size: 1em;
+  }
+  
+  details ul {
+    padding: 15px;
+  }
+  
+  details li {
+    margin: 8px 0;
+    padding: 6px 10px;
+  }
+  
+  .marathon-stats {
+    grid-template-columns: 1fr;
+    padding: 15px;
+  }
+}
