@@ -1,20 +1,68 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <meta charset="utf-8">
-    <title>CV</title>
-    <link href="css/source2.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="text-area">
-      <h1>CV</h1>
-          <p> CV is here (Latest Update: Apr., 2025). 
-          <a href= "https://www.dropbox.com/scl/fi/3jh5mocb3qpgh0fpg2m4a/CV_Yuichi_Igarashi_web.pdf?rlkey=zsd0ljjf94ddbrqsn2ojpimsp&st=albsi4sc&dl=0" target="_blank" > CV </a>
-          </p>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Yuichi Igarashi</title>
+    <meta name="description" content="Curriculum Vitae of Yuichi Igarashi - PhD student in Economics">
+    <link href="css/source1.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="header" style="height: 30vh;">
+        <nav class="navbar">
+            <h2 class="logo"> Yuichi Igarashi </h2>
+            <ul class="menu">
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="index2.html"> Research </a></li>
+                <li><a href="index_cv.html" aria-current="page"> CV </a></li>
+                <li><a href="index3.html"> Hobbies</a></li>
+                <li><a href="index4.html"> Japanese</a></li>
+            </ul>
+        </nav>
     </div>
 
-    <p>
-      <a href="index.html"> Back to Home </a>
-    </p>
-  </body>
+    <main class="container">
+        <div class="text-area">
+            <h1>Curriculum Vitae</h1>
+            <p style="text-align: center; margin: 30px 0;">
+                <a href="https://www.dropbox.com/scl/fi/3jh5mocb3qpgh0fpg2m4a/CV_Yuichi_Igarashi_web.pdf?rlkey=zsd0ljjf94ddbrqsn2ojpimsp&st=albsi4sc&dl=0" 
+                   target="_blank" rel="noopener" class="btn" style="font-size: 1.2em; padding: 15px 30px;">
+                   📄 Download CV (PDF)
+                </a>
+            </p>
+            <p style="text-align: center; color: #666; font-style: italic;">
+                Latest Update: April 2025
+            </p>
+            
+            <div style="margin-top: 40px; text-align: center;">
+                <h2>Quick Overview</h2>
+                <div class="research-interests">
+                    <p><strong>Current Position:</strong> PhD Student, Graduate School of Economics, University of Tokyo</p>
+                    <p><strong>Starting Fall 2025:</strong> PhD Student, University of Rochester</p>
+                    <p><strong>Research Fields:</strong> Empirical Microeconomics, Political Economics, Industrial Organization</p>
+                    <p><strong>Fellowship:</strong> JSPS Research Fellow (DC1)</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-area">
+            <p style="text-align: center;">
+                <a href="index.html" class="btn"> ← Back to Home </a>
+                <a href="index2.html" class="btn"> View Research → </a>
+            </p>
+        </div>
+    </main>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menu = document.querySelector(".menu");
+        window.addEventListener("scroll", () => {
+            if (window.pageYOffset >= menu.offsetTop) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        });
+    </script>
+</body>
 </html>
