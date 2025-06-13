@@ -456,6 +456,11 @@ details li:hover {
 @media (max-width: 768px) {
     .navbar {
         padding: 0.5rem 1rem;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 1.2rem;
     }
 
     .menu {
@@ -469,6 +474,7 @@ details li:hover {
         flex-direction: column;
         align-items: flex-start;
         width: 100%;
+        margin-top: 0.5rem;
     }
 
     .menu.active {
@@ -482,13 +488,14 @@ details li:hover {
     }
 
     .menu-toggle {
-        display: block;
+        display: block !important;
         background: none;
         border: none;
         color: #ffffff;
         font-size: 1.5rem;
         cursor: pointer;
         padding: 0.5rem;
+        margin-left: auto;
     }
 }
 
