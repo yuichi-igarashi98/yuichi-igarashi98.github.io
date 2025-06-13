@@ -12,7 +12,6 @@
     <div class="header">
         <nav class="navbar">
             <h2 class="logo">Yuichi Igarashi</h2>
-            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
             <ul class="menu">
                 <li><a href="index.html" aria-current="page">Home</a></li>
                 <li><a href="index2.html">Research</a></li>
@@ -128,22 +127,6 @@
             } else {
                 navbar.classList.remove("sticky");
             }
-        });
-
-        // Mobile menu toggle functionality
-        document.addEventListener('DOMContentLoaded', function() {
-            const menuToggle = document.querySelector('.menu-toggle');
-            const menu = document.querySelector('.menu');
-            
-            menuToggle.addEventListener('click', function() {
-                menu.classList.toggle('active');
-                // Close menu when clicking outside
-                document.addEventListener('click', function(event) {
-                    if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
-                        menu.classList.remove('active');
-                    }
-                });
-            });
         });
     </script>
     
