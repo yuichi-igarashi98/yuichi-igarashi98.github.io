@@ -404,7 +404,7 @@ details li:hover {
     transition: all 0.3s ease;
     padding: 0.5rem 2rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
 }
 
@@ -414,6 +414,7 @@ details li:hover {
     color: #ffffff;
     margin: 0;
     padding: 0;
+    margin-bottom: 0.5rem;
 }
 
 .menu {
@@ -423,6 +424,8 @@ details li:hover {
     padding: 0;
     list-style: none;
     align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
 .menu a {
@@ -457,8 +460,6 @@ details li:hover {
 @media (max-width: 768px) {
     .navbar {
         padding: 0.5rem 1rem;
-        flex-direction: column;
-        align-items: center;
         background: rgba(76, 175, 80, 0.98);
     }
 
@@ -468,12 +469,8 @@ details li:hover {
     }
 
     .menu {
-        display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
         gap: 0.8rem;
-        width: 100%;
         padding: 0.5rem 0;
     }
 
