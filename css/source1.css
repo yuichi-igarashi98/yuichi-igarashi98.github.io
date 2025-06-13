@@ -468,6 +468,7 @@ details li:hover {
         padding: 1rem;
         flex-direction: column;
         align-items: flex-start;
+        width: 100%;
     }
 
     .menu.active {
@@ -498,7 +499,7 @@ details li:hover {
 /* Adjust main content padding for mobile */
 @media (max-width: 768px) {
     .main-content {
-        padding-top: 120px; /* Increased to accommodate the taller navbar on mobile */
+        padding-top: 120px;
     }
 }
 

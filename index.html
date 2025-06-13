@@ -119,6 +119,7 @@
     </main>
 
     <script>
+        // Navbar scroll effect
         const navbar = document.querySelector(".navbar");
         const menu = document.querySelector(".menu");
         window.addEventListener("scroll", () => {
@@ -129,13 +130,19 @@
             }
         });
 
-        // Add mobile menu toggle functionality
+        // Mobile menu toggle functionality
         document.addEventListener('DOMContentLoaded', function() {
             const menuToggle = document.querySelector('.menu-toggle');
             const menu = document.querySelector('.menu');
             
             menuToggle.addEventListener('click', function() {
                 menu.classList.toggle('active');
+                // Close menu when clicking outside
+                document.addEventListener('click', function(event) {
+                    if (!menu.contains(event.target) && !menuToggle.contains(event.target)) {
+                        menu.classList.remove('active');
+                    }
+                });
             });
         });
     </script>
